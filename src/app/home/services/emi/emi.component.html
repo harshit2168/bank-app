@@ -1,0 +1,26 @@
+<div>
+  <br>
+  <br>
+  <br>
+  <fieldset>
+    <legend>EMI Calculation</legend>
+<form name="f1">
+    Types of Loan:
+    <select (change)="display(op.value)" #op>
+      <option value="1"> Home Loan</option>
+      <option value="2"> Car Loan</option>
+      <option value="3"> Personal Loan</option>
+      <option value="4"> Education Loan</option>
+    </select> <br><br>
+
+    Loan amount: <input type="number" #amount><br><br>
+    Loan tenure: <input type="number"  #tenure><br><br>
+    Rate Of Interest(annually): <span  #interest >{{find(op.value)}} </span><br><br>
+    Your EMI:<span>{{emi}}</span> 
+<br>
+<br>
+<button type="button" (click)="solve(amount.value, tenure.value, interest.value)">EMI</button>
+</form>
+</fieldset>
+
+</div>

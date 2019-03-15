@@ -1,0 +1,19 @@
+p{
+    float:right;
+    font-size: 100%;
+
+}
+
+hr{
+    border-color: brown; 
+}
+a{
+    -webkit-text-fill-color: black;
+    font-size: 160%;
+}
+
+body{
+    background-color:rgb(250, 143, 67);
+    background-size:cover;
+    
+}

@@ -1,0 +1,54 @@
+<!--<h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div *ngIf="disp">
+    <lifecycle></lifecycle>    
+  </div>
+  <button type="button" (click)="abc()">ADD/REMOVE</button>
+-->
+
+<div class= "abc" style ="background-color:rgb(250, 143, 67)"  *ngIf= "disp1">
+  <hr>
+ 
+  <img style="position: absolute; top: 5; left: 0; width:300px; height:70px" src="assets/bank3.jpg">
+  <p  style ="background-color:rgb(250, 143, 67)">
+  <a routerLink= "home">HOME |</a> 
+  <a routerLink= "services">SERVICES |</a> 
+  <a routerLink= "about">ABOUT US |</a> 
+  <a routerLink= "contact">CONTACT US | </a> 
+  <a routerLink= "" (click)= "display()">LOGOUT  </a> 
+  
+  </p>
+<br>
+<br>
+<br>
+<br>
+<hr>
+</div>
+
+<div class ="def"  *ngIf= "disp">
+  <img style="position: absolute; top:6; left: 0; width:300px; height:70px" src="assets/bank3.jpg">
+  <br>
+	<br>
+	<br>
+  <br>
+  <h1>Welcome to IDBI Bank. You need to login/signup to go to our home page</h1>
+	<fieldset>
+	<legend >Please Login</legend>
+	
+    <form class="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+		<h3>
+			Id:<input type="text" name="un" formControlName="id" ><br><br>
+			Password:<input type= "password" name= "pwd" formControlName="password">
+			<br><span>{{msg}}</span><br>
+			<input type= "submit" name= "b1" value="LOGIN" [disabled]="!form.valid">
+      <input type= "reset" name= "b2" value="RESET"><br>
+      <p style="color: red; text-align: end" routerLink="login/signup" (click)= "change()"> <b>Not a registered user?SIGN UP</b></p>
+		</h3>
+
+		
+</form>
+</fieldset>
+</div>
+ <router-outlet></router-outlet>
+

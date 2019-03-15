@@ -1,0 +1,53 @@
+p{
+    float:right;
+    font-size: 100%;
+
+}
+
+hr{
+    border-color: brown; 
+}
+a{
+    -webkit-text-fill-color: black;
+    font-size: 160%;
+}
+.abc{
+    background-color:rgb(250, 143, 67);
+    background-size:cover;
+    
+}
+.def
+{
+    background-color:rgb(118, 224, 164);
+    height: 100vh;
+    text-align:center
+}
+
+form{
+    align-self: center;
+
+}
+fieldset
+{
+    margin: 0px auto;
+    text-align: center;
+    height:180px;
+    width:600px;
+    border-color: crimson;
+}
+legend{
+    font-family: 'Courier New', Courier, monospace;
+    text-anchor: brown;
+}
+input[type=submit]:hover
+{
+    background-color:green;
+}
+
+input[type=submit]:disabled
+{
+        background-color:red;
+}
+h1{
+    color: orange;
+}

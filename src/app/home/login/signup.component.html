@@ -1,0 +1,53 @@
+<body>
+<marquee> Industrial Developmemt Bank of India
+	  </marquee>
+		<h2> Enter Your Details</h2>
+		<form class="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+		<fieldset>
+		<legend align-self="right">Personal Details</legend><br>
+	
+		<h3>
+			First Name:<input type="text" name= "fn" formControlName="firstname"><br><br>
+			Last Name:<input type="text" name= "ln" formControlName="lastname"><br><br>
+			Mobile:<input type="tel" name="mn" formControlName="mobile"><br><br>
+			Email id:<input type="email" name= "em" formControlName="email"><br><br>
+			Address:<input type= "text" name= "add" formControlName="address"><br><br>
+		</h3>
+		</fieldset>
+		<fieldset >
+		<legend align-self="left">Bank Details</legend><br>
+		
+		<h3>
+			Account No:<input type="text" name= "ac" formControlName="accountNo"><br><br>
+			CIF No:<input type= "text" name= "cif" formControlName="cif"><br><br>
+			IFSC Code:<input type= "text" name= "ifsc" formControlName="ifsc"><br><br>
+			Type of Account:<select name="acc" formControlName="typeofacc"> <!--write multiple for multiple selection -->
+					<option>Select type</option>
+					<option>Savings</option>
+					<option>Current</option>
+					<option>Joint</option>
+			</select><br><br>
+			Home Branch Address:<input type= "text" name= "hba" formControlName="homebranch"><br><br>
+			
+			
+		</h3>
+		
+		</fieldset>
+		<fieldset >
+		<legend align-self="right">User Details </legend><br>
+		
+		<h3>
+			Username:<input type= "text" name= "un" formControlName="username">
+			Password:<input type= "password" name="pw" autocomplete="password" formControlName="password"><br><br>
+			Re-confirm Password:<input type= "password" name= "rpw" autocomplete="password" formControlName="repassword">
+			<span>{{msg}}</span><br>
+			<input type= "submit" name= "b1" value="REGISTER" [disabled]="!form.valid">
+			<input type= "reset" name= "b2" value="RESET">
+			<p style="color: red; text-align: end" routerLink="" (click)= "change()"> <b>Already a registered user?Log in</b></p>
+			
+		</h3>
+		</fieldset>
+	</form>
+
+		</body>
+		

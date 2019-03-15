@@ -1,0 +1,25 @@
+
+body
+{
+    text-align:center;
+    background-color: rgb(118, 224, 164);
+    height:100vh;
+    
+}
+    
+    
+hr{
+   
+    color:black;
+    width:50%;
+}  
+
+h1
+{
+    color:red;
+    
+}
+p
+{
+    font-size: 160%;
+}

@@ -1,0 +1,41 @@
+div{
+	text-align:center;
+	background-color:rgb(118, 224, 164);
+	height:100vh;
+}
+		
+fieldset
+{
+	border-color: crimson;
+    width:500px;
+    margin:0px auto;
+	
+}
+		legend
+		{
+			font-family: 'Courier New', Courier, monospace;
+			text-anchor: brown;
+		}
+		input[type=button]
+		{
+			color:blue;
+		}
+		
+		
+		
+		span
+		{
+			color:red;
+		}
+				
+					
+		
+		input[type=button]
+		{
+			margin:8px;
+		}
+			
+					
+					
+				
+			

@@ -1,0 +1,63 @@
+
+		h2
+		{
+			text-align:center;
+		}
+		span{
+			color:red;
+		}
+		body
+		{
+			background-color:rgb(118, 224, 164);
+		}
+			
+		input[type=text], input[type=password],input[type=tel], input[type=email]
+		{
+			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+ 			display: inline-block;
+ 			border: 1px solid #ccc;
+  			box-sizing: border-box;
+		}	
+		input[type=submit], input[type=reset]
+		{
+			margin:5px;
+
+		}
+			
+			
+		
+		fieldset
+		{
+			
+            border-color: crimson;
+			
+			width:500px;
+			margin:0px auto
+			
+			
+			
+		}
+		legend{
+            font-family: 'Courier New', Courier, monospace;
+            text-anchor: brown;
+        }
+        
+        marquee
+        {
+         font-size: larger;
+         font-style: italic;
+         font-family:'Courier New', Courier, monospace;
+         -webkit-text-fill-color: crimson;
+		}
+		
+		input[type=submit]:hover
+		{
+    		background-color:green;
+		}
+
+		input[type=submit]:disabled
+		{
+   			 background-color:red;
+		}

@@ -1,0 +1,17 @@
+.imagedis
+{
+    background-image:url("src/assets/bank4.jpg");
+    margin:0px auto; 
+    background-size :cover;
+    height:86vh;
+    width:70vw;
+    background-repeat:no-repeat;
+    
+    
+}
+body{
+    background-color: rgb(118, 224, 164);
+    
+}
+
+ 

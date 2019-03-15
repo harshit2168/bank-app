@@ -1,0 +1,16 @@
+
+<div>
+		<br>
+		<br>
+		<br>
+<fieldset>
+	<legend>Deposit Calculation</legend>
+<form name="f1">
+			Deposit amount: <input type="number" #amt><br><br>
+			Tenure(in years): <input type="number" #time ><br><br>
+			Maturity amount: <span id="s1">{{x}}</span><br><br>
+			<input type="button" name="b1" value= "Fixed Deposit" (click)="solve(amt.value,time.value,1)">
+			<input type="button" name="b1" value= "Recurring Deposit" (click)="solve(amt.value,time.value,2)">
+</form>
+	</fieldset>
+	</div>
